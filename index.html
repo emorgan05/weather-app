@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container" id="bgimg">
+    <h1>Local Weather</h1>
+    <div class="box1">
+      <div class="row">
+        <div class="col-sm-12">
+          <canvas id="iconBig" width="128" height="128"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <p id="currentTemp"></p>
+          <button class="btn btn-primary" id="button">F/C</p>
+        </div>
+        <div class="col-sm-4">
+          <p id="currentCond"></p>
+        </div>
+        <div class="col-sm-4">
+          <p id="currentWind"></p>
+        </div>
+      </div>
+      <div class="row" id="forecast">
+      </div>
+    </div>
+    <div class="footer">
+      <a href="https://darksky.net/poweredby/"><p>Powered by DarkSky</p></a>
+      <a href="https://unsplash.com/search/sky?photo=-xa9XSA7K9k"><p>Photo by Diego Hernandez on Unsplash</p></a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+  <script src="script.js"></script>
+
+</body>
